@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <!-- Font Awesome CDN -->
+
+
+   <!--=============== CSS ===============-->
+   <link rel="shortcut icon" type="x-icon" href="img/homepage/body - header/x-icon.jpg">
+
+   <title>Homepage - Xiāo Ruì Fǎ Website</title>
+</head>
+<body>
+   <!--=============== HEADER ===============-->
+   <header class="header" id="header">
+      <div class="header__container">
+         <a class="header__logo">
+            <i class="ri-cloud-fill"></i>
+            <span>Xiào Shàn ⚡</span>
+         </a>
+         
+         <!-- <a href="https://forms.gle/2DV3uXw2r1VavPD59" class="header__cs">
+            <img class="cs" src="https://img.icons8.com/?size=100&id=11651&format=png&color=00BAAD" alt="Customer Service Chat">
+         </a> -->
+
+        <a href="customercs.html" class="header__cs">
+            <i class="fas fa-headset"></i>
+         </a>
+
+         <a href="cart.html" class="header__cart">
+            <i class="ri-shopping-cart-line"></i>
+         </a>
+         
+         <button class="header__toggle" id="header-toggle">
+            <i class="ri-menu-line"></i>
+         </button>
+      </div>
+   </header>
+
+   <!--=============== PAYMENT NOTIFICATION ===============-->
+   <div class="payment-notification" id="payment-notification">
+      <p>Payment Successful! Your transaction is complete.</p>
+      <button onclick="hidePaymentNotification()" class="notification__close">
+         <i class="ri-close-line"></i></button>
+   </div>
+
+   <!--=============== SIDEBAR ===============-->
+   <nav class="sidebar" id="sidebar">
+      <div class="sidebar__container">
+        <a href="infoprofil.html" class="iii">
+         <div class="sidebar__user">
+            <div class="sidebar__img">
+               <img src="assets/img/foto profil.jpg" alt="image">
+            </div>
+
+            <div class="sidebar__info">
+               <h3>Xiao Shan Owner</h3>
+               <h5>username</h5>
+               <span>xiaoshan@gmail.com</span>
+            </div>
+         </div>
+         </a>
+
+         <div class="sidebar__content">
+            <div>
+               <h3 class="sidebar__title">PRODUCT CATEGORY</h3>
+               <div class="sidebar__list">
+                  <a href="home.html" class="sidebar__link active-link">
+                     <i class="ri-shopping-cart-line"></i>
+                     <span>Homepage</span>
+                  </a>
+                  
+                  <a href="#" class="sidebar__link">
+                     <i class="ri-wallet-3-fill"></i>
+                     <span>My Wallet</span>
+                  </a>
+
+                  <a href="#" class="sidebar__link">
+                     <i class="ri-calendar-fill"></i>
+                     <span>Calendar</span>
+                  </a>
+
+                  <a href="#" class="sidebar__link">
+                     <i class="ri-arrow-up-down-line"></i>
+                     <span>Recent Transactions</span>
+                  </a>
+
+                  <a href="#" class="sidebar__link">
+                     <i class="ri-bar-chart-box-fill"></i>
+                     <span>Statistics</span>
+                  </a>
+               </div>
+            </div>
+
+            <div>
+               <h3 class="sidebar__title"></h3>
+               <div class="sidebar__list">
+
+                  <a href="settings.html" class="sidebar__link">
+                     <i class="ri-settings-3-fill"></i>
+                     <span>Settings</span>
+                  </a>
+                  
+                  <a href="#" class="sidebar__link">
+                     <i class="ri-mail-unread-fill"></i>
+                     <span>My Messages</span>
+                  </a>
+
+                  <a href="notification.html" class="sidebar__link">
+                     <i class="ri-notification-2-fill"></i>
+                    <span>Notifications</span>
+                    <span class="notification-badge" id="notification-badge"></span>
+                  </a>
+
+               </div>
+            </div>
+         </div>
+         
+         <div>
+               <h3 class="sidebar__title">TOOLS</h3>
+               <div class="sidebar__list">
+                  <a href="about-developer.html" class="sidebar__link">
+                     <i class="fas fa-code"></i>
+                     <span>About Developer</span>
+                  </a>
+                  <a href="#" class="sidebar__link">
+                     <i class="ri-flag-fill"></i>
+                     <span>Report</span>
+                  </a>
+                  <button>
+               <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button">
+                  <span>Theme</span>
+               </i>
+            </button>
+               </div>
+            </div>
+
+         <div class="sidebar__actions">
+            <a href="log.html"><button class="sidebar__link">
+               <i class="ri-logout-box-r-fill"></i>
+               <span>Log Out</span>
+            </button></a>
+         </div>
+      </div>
+   </nav>
+
+   <!--=============== MAIN ===============-->
+   <main class="main container" id="main">
+      <h2 class="positioned-title">List Product</h2>
+    <h1 class="main container">Mobile Legends</h1>
+    <div class="product__list">
+        <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Starlight Bassic</h3>
+            <p class="product-price">Rp. 38.000</p>
+            <button class="product__button" data-name="Starlight Bassic" data-price=". 38.000">Beli</button>
+        </div>
+        <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 2" class="product__img">
+            <h3>Produk 2</h3>
+            <p class="product-price">Rp200.000</p>
+            <button class="product__button" data-name="Produk 2" data-price="200000">Beli</button>
+        </div>
+         <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+         <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+        <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+        <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+        
+    </div>
+    
+    
+    <h1 class="main container">Halaman Produk</h1>
+    <div class="product__list">
+        <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+        <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 2" class="product__img">
+            <h3>Produk 2</h3>
+            <p class="product-price">Rp200.000</p>
+            <button class="product__button" data-name="Produk 2" data-price="200000">Beli</button>
+        </div>
+         <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+         <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+    </div>
+    
+    
+    <h1 class="main container">Halaman Produk</h1>
+    <div class="product__list">
+        <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+        <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 2" class="product__img">
+            <h3>Produk 2</h3>
+            <p class="product-price">Rp200.000</p>
+            <button class="product__button" data-name="Produk 2" data-price="200000">Beli</button>
+        </div>
+         <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+         <div class="product__item">
+            <img src="assets/img/product1.jpg" alt="Produk 1" class="product__img">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp100.000</p>
+            <button class="product__button" data-name="Produk 1" data-price="100000">Beli</button>
+        </div>
+        
+    </div>
+   </main>
+
+   <!--=============== CSS & JS ===============-->
+  <style>
+          /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(228, 85%, 63%);
+  --title-color: hsl(228, 18%, 16%);
+  --text-color: hsl(228, 8%, 56%);
+  --body-color: hsl(228, 100%, 99%);
+  --shadow-color: hsla(228, 80%, 4%, .1);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Nunito Sans", system-ui;
+  --normal-font-size: 1rem; /* base size */
+  --smaller-font-size: .875rem; /* adjusted for better scaling */
+  --tiny-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 600px) {
+  :root {
+    --normal-font-size: calc(1rem + 0.5vw); /* fluid scaling */
+    --smaller-font-size: calc(0.875rem + 0.5vw);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --normal-font-size: 1rem; /* reset for larger screens */
+    --smaller-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color .4s;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  all: unset;
+}
+
+/*=============== VARIABLES DARK THEME ===============*/
+body.dark-theme {
+  --first-color: hsl(228, 70%, 63%);
+  --title-color: hsl(228, 18%, 96%);
+  --text-color: hsl(228, 12%, 61%);
+  --body-color: hsl(228, 24%, 16%);
+  --shadow-color: hsla(228, 80%, 4%, .3);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  margin-inline: 1.5rem;
+}
+
+.main {
+  padding-top: 5rem;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-fixed);
+  margin: .75rem;
+}
+
+.header__container {
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--body-color);
+  box-shadow: 0 2px 24px var(--shadow-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.5rem;
+  border-radius: 1rem;
+  transition: background-color .4s;
+}
+
+.header__logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.header__logo i {
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.header__logo span {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.header__toggle {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+/* Menambahkan posisi ikon cart di sebelah kiri sidebar */
+.header__cart {
+    right: 55px;
+    margin-top: 3px;  /* Posisi vertikal di tengah sidebar */
+    transform: translateY(-50%);  /* Mengatur posisi tengah vertikal dengan tepat */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* background-color: #333;  /* Warna latar belakang gelap */
+    /*border-radius: 50%;  /* Membuat bentuk bulat */
+    /*padding: 12px;  /* Memberikan ruang di sekitar ikon */
+    transition: background-color 0.3s ease;  /* Efek transisi saat hover */
+    position: absolute;
+}
+
+/* Efek hover untuk cart */
+.header__cart:hover {
+    /*background-color: #555;  /* Warna lebih terang saat hover */
+}
+
+/* Ukuran dan warna ikon */
+.header__cart i {
+    font-size: 24px;  /* Ukuran ikon */
+    color: var(--title-color);  /* Warna ikon putih */
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .header__cart {
+        right: 55px;
+        top: 45%;  /* Menyesuaikan sedikit lebih atas pada layar kecil */
+    }
+
+    .header__cart i {
+        font-size: 20px;  /* Mengurangi ukuran ikon pada layar kecil */
+    }
+}
+
+.header__cs {
+    position: absolute; /* Mengatur posisi bebas */
+    top: 20px;          /* Jarak dari atas */
+    right: 82px;        /* Jarak dari kanan */
+    /* Ubah `right` ke `left` jika ingin diatur ke kiri */
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.cs {
+    display: block; /* Menjaga gambar tetap rapi */
+    width: 18px;    /* Atur ukuran gambar */
+    height: auto;   /* Sesuaikan tinggi gambar secara proporsional */
+}
+
+ .header__chat-ai {
+    position: absolute; /* Mengatur posisi bebas */
+    top: 20px;          /* Jarak dari atas */
+    right: 110px;       /* Jarak dari kanan */
+   /* Ubah `right` ke `left` jika ingin diatur ke kiri */
+}
+
+.chat-ai {
+    display: block; /* Menjaga gambar tetap rapi */
+    width: 18px;    /* Atur ukuran gambar */
+    height: auto;   /* Sesuaikan tinggi gambar secara proporsional */
+} 
+
+/* Menambahkan posisi ikon cart di sebelah kiri sidebar */
+/*.header__chat-ai {
+    right: 55px;
+    margin-top: 3px;  Posisi vertikal di tengah sidebar
+    transform: translateY(-50%);  Mengatur posisi tengah vertikal dengan tepa
+    display: flex;
+   align-items: center;
+    justify-content: center;
+   /* background-color: #333;  /* Warna latar belakang gelap */
+    /*border-radius: 50%;  /* Membuat bentuk bulat */
+    /*padding: 12px;  /* Memberikan ruang di sekitar ikon
+   transition: background-color 0.3s ease;  /* Efek transisi saat hover 
+    position: absolute;
+} 
+
+/* Efek hover untuk cart
+.header__chat-ai:hover {
+    /*background-color: #555;  /* Warna lebih terang saat hover 
+} */
+
+/* Ukuran dan warna ikon *
+.header__chat-ai i { 
+    font-size: 24px;  /* Ukuran ikon 
+    color: var(--title-color);  /* Warna ikon putih 
+} */
+
+/* Responsif untuk layar lebih kecil
+@media (max-width: 768px) { 
+    .header__chat-ai { 
+        right: 55px;
+        top: 45%;  /* Menyesuaikan sedikit lebih atas pada layar kecil
+    } 
+
+    .header__chat-ai i {
+        font-size: 20px;  /* Mengurangi ukuran ikon pada layar kecil
+    }
+} */
+
+/*=============== SIDEBAR ===============*/
+.sidebar {
+  position: fixed;
+  left: -120%;
+  top: 0;
+  bottom: 0;
+  z-index: var(--z-fixed);
+  width: 288px;
+  background-color: var(--body-color);
+  box-shadow: 2px 0 24px var(--shadow-color);
+  padding-block: 1.5rem;
+  margin: .75rem;
+  border-radius: 1rem;
+  transition: left .4s, background-color .4s, width .4s;
+}
+
+.sidebar__container, 
+.sidebar__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.sidebar__container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidebar__user {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  column-gap: 1rem;
+  padding-left: 2rem;
+}
+
+.iii {
+  color:  var(--title-color);
+  transition: color .4s;
+}
+
+.sidebar__img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+}
+
+.sidebar__img img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+}
+
+.sidebar__info h3 {
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+  transition: color .4s;
+}
+
+.sidebar__info h5 {
+  font-size: var(--smaller-font-size);
+
+}
+
+.sidebar__info span {
+  font-size: var(--smaller-font-size);
+}
+
+.sidebar__content {
+  overflow: hidden auto;
+}
+
+.sidebar__content::-webkit-scrollbar {
+  width: .4rem;
+  background-color: hsl(228, 8%, 85%);
+}
+
+.sidebar__content::-webkit-scrollbar-thumb {
+  background-color: hsl(228, 8%, 75%);
+}
+
+.sidebar__title {
+  width: max-content;
+  font-size: var(--tiny-font-size);
+  font-weight: var(--font-semi-bold);
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar__list, 
+.sidebar__actions {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.sidebar__link {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  column-gap: 1rem;
+  color: var(--text-color);
+  padding-left: 2rem;
+  transition: color .4s, opacity .4s;
+}
+
+.sidebar__link i {
+  font-size: 1.25rem;
+}
+
+.sidebar__link span {
+  font-weight: var(--font-semi-bold);
+}
+
+.sidebar__link:hover {
+  color: var(--first-color);
+}
+
+.sidebar__actions {
+  margin-top: auto;
+}
+
+.sidebar__actions button {
+  cursor: pointer;
+}
+
+.sidebar__theme {
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.sidebar__theme span {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+}
+
+/* Show sidebar */
+.show-sidebar {
+  left: 0;
+}
+
+/* Active link */
+.active-link {
+  color: var(--first-color);
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 20px;
+  background-color: var(--first-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 360px) {
+  .header__container {
+    padding-inline: 1rem;
+  }
+
+  .sidebar {
+    width: max-content;
+  }
+
+  .sidebar__info, 
+  .sidebar__link span {
+    display: none;
+  }
+
+  .sidebar__user, 
+  .sidebar__list, 
+  .sidebar__actions {
+    justify-content: center;
+  }
+
+  .sidebar__user, 
+  .sidebar__link {
+    grid-template-columns: max-content;
+  }
+
+  .sidebar__user {
+    padding: 0;
+  }
+
+  .sidebar__link {
+    padding-inline: 2rem;
+  }
+
+  .sidebar__title {
+    padding-inline: .5rem;
+    margin-inline: auto;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .sidebar {
+    width: 250px; /* adjust for medium devices */
+  }
+
+  .product__list {
+    justify-content: space-around; /* spacing for medium devices */
+  }
+
+  .product__item {
+    width: calc(50% - 1rem); /* two items per row */
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .header {
+    margin: 1rem;
+    padding-left: 340px;
+    transition: padding .4s;
+  }
+
+  .header__container {
+    height: calc(var(--header-height) + 2rem);
+    padding-inline: 2rem;
+  }
+
+  .header__logo {
+    order: 1;
+  }
+
+  .sidebar {
+    left: 0;
+    width: 316px;
+    margin: 1rem;
+  }
+
+  .sidebar__info, 
+  .sidebar__link span {
+    transition: opacity .4s;
+  }
+
+  .sidebar__user, 
+  .sidebar__title {
+    transition: padding .4s;
+  }
+
+  /* Reduce sidebar */
+  .show-sidebar {
+    width: 90px;
+  }
+
+  .show-sidebar .sidebar__user {
+    padding-left: 1.25rem;
+  }
+
+  .show-sidebar .sidebar__title {
+    padding-left: 0;
+    margin-inline: auto;
+  }
+
+  .show-sidebar .sidebar__info, 
+  .show-sidebar .sidebar__link span {
+    opacity: 0;
+  }
+
+  .main {
+    padding-left: 340px;
+    padding-top: 8rem;
+    transition: padding .4s;;
+  }
+  
+  /* Add padding left */
+  .left-pd {
+    padding-left: 114px;
+  }
+
+  .product__list {
+    justify-content: center;
+  }
+
+  .product__item {
+    width: 180px; /* fixed width for large screens */
+  }
+}
+
+.product__list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.product__item {
+  background-color: var(--first-color);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px var(--shadow-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.product__img {
+  width: 100%;
+  border-radius: 8px;
+  color: black;
+}
+
+.product__item h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: black;
+}
+
+.product__item p {
+  font-size: 1rem;
+  color: black;
+}
+
+.product__button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.product__button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.payment-notification {
+   position: fixed;
+   top: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #4CAF50; /* Green for success */
+   color: white;
+   padding: 15px 20px;
+   border-radius: 15px;
+   display: flex;
+   align-items: center;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+   z-index: 1000;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.payment-notification.show {
+   opacity: 1;
+   visibility: visible;
+}
+
+.notification__close {
+   background: none;
+   border: none;
+   color: white;
+   margin-left: 15px;
+   cursor: pointer;
+   font-size: 1.2rem;
+}
+
+.positioned-title {
+    position: absolute; /* Mengizinkan pengaturan posisi bebas */
+    top: 75px;          /* Atur jarak dari atas */
+    left: 180px;         /* Atur jarak dari kiri */
+    /* Ubah `top`, `bottom`, `left`, dan `right` sesuai kebutuhan */
+    font-size: 30px;    /* Ukuran teks */
+    font-weight: bold;  /* Menonjolkan teks */
+}
+
+/*=========== Extra small screens (portrait phones, 360px and below) ============*/
+@media screen and (max-width: 360px) {
+    .header__container {
+        padding-inline: 1rem;
+    }
+    .sidebar {
+        width: max-content;
+    }
+    .sidebar__info, 
+    .sidebar__link span {
+        display: none;
+    }
+    .sidebar__user, 
+    .sidebar__list, 
+    .sidebar__actions {
+        justify-content: center;
+    }
+    .sidebar__user, 
+    .sidebar__link {
+        grid-template-columns: max-content;
+    }
+    .sidebar__user {
+        padding: 0;
+    }
+    .sidebar__link {
+        padding-inline: 2rem;
+    }
+    .sidebar__title {
+        padding-inline: .5rem;
+        margin-inline: auto;
+    }
+}
+
+/*=========== For tablets (iPad, 768px to 1024px) ============*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .sidebar {
+        width: 300px;
+    }
+    .header {
+        padding-left: 300px;
+    }
+    .product__list {
+        justify-content: space-around;
+    }
+    .product__item {
+        width: calc(50% - 1rem);
+    }
+}
+
+/*=========== For large desktop screens ============*/
+@media screen and (min-width: 1600px) {
+    .header {
+        padding-left: 380px;
+    }
+    .header__container {
+        height: calc(var(--header-height) + 2rem);
+    }
+    .sidebar {
+        left: 0;
+        width: 350px;
+    }
+    .product__list {
+        justify-content: space-between;
+    }
+    .product__item {
+        width: calc(25% - 1rem);
+    }
+}
+
+/*=========== TV-sized screens ============*/
+@media screen and (min-width: 1920px) {
+    .header {
+        padding-left: 420px;
+    }
+    .sidebar {
+        width: 400px;
+    }
+    .product__item {
+        width: calc(20% - 1rem);
+    }
+}
+
+/* Tambahan CSS untuk responsivitas */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 70vw; /* Sidebar lebih kecil di layar tablet */
+    }
+    .cart-container, .customer-service, .chat-ai {
+        font-size: 14px;
+    }
+    .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grid lebih fleksibel */
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80vw; /* Sidebar lebih kecil di layar HP */
+    }
+    .cart-container, .customer-service, .chat-ai {
+        font-size: 12px; /* Font lebih kecil agar tidak memenuhi layar */
+    }
+    .products-container {
+        gap: 1rem; /* Mengurangi jarak antar produk */
+    }
+    .header-icons {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 90vw;
+    }
+    .cart-container, .customer-service, .chat-ai {
+        font-size: 10px;
+    }
+    .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .header-icons {
+        gap: 5px;
+    }
+}
+
+  </style>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Ambil data username, email, dan foto profil dari localStorage
+    const name = localStorage.getItem('name');
+    const username = localStorage.getItem('username');
+    const email = localStorage.getItem('email');
+    const profilePicture = localStorage.getItem('profilePicture');
+
+    if (name && username && email && profilePicture) {
+        const sidebarName = document.querySelector('.sidebar__info h3');
+        const sidebarUsername = document.querySelector('.sidebar__info h5');
+        const sidebarEmail = document.querySelector('.sidebar__info span');
+        const sidebarImg = document.querySelector('.sidebar__img img');
+
+        sidebarName.textContent = name;
+        sidebarUsername.textContent = username;
+        sidebarEmail.textContent = email;
+        sidebarImg.src = profilePicture;
+    }
+
+    /*=============== SHOW SIDEBAR ===============*/
+    const showSidebar = (toggleId, sidebarId, headerId, mainId) => {
+        const toggle = document.getElementById(toggleId),
+            sidebar = document.getElementById(sidebarId),
+            header = document.getElementById(headerId),
+            main = document.getElementById(mainId);
+
+        if (toggle && sidebar && header && main) {
+            toggle.addEventListener('click', () => {
+                sidebar.classList.toggle('show-sidebar');
+                header.classList.toggle('left-pd');
+                main.classList.toggle('left-pd');
+            });
+        }
+    };
+    showSidebar('header-toggle', 'sidebar', 'header', 'main');
+
+    /*=============== LINK ACTIVE ===============*/
+    const sidebarLink = document.querySelectorAll('.sidebar__list a');
+
+    function linkColor() {
+        sidebarLink.forEach(l => l.classList.remove('active-link'));
+        this.classList.add('active-link');
+    }
+
+    sidebarLink.forEach(l => l.addEventListener('click', linkColor));
+
+    /*=============== DARK LIGHT THEME (Default Dark) ===============*/
+    const themeButton = document.getElementById('theme-button');
+    const darkTheme = 'dark-theme';
+    const iconTheme = 'ri-sun-fill';
+
+    let selectedTheme = localStorage.getItem('selected-theme');
+    let selectedIcon = localStorage.getItem('selected-icon');
+
+    // Jika tidak ada data di localStorage, tema default adalah dark
+    if (!selectedTheme) {
+        selectedTheme = 'dark';
+        selectedIcon = 'ri-moon-clear-fill';
+        localStorage.setItem('selected-theme', selectedTheme);
+        localStorage.setItem('selected-icon', selectedIcon);
+    }
+
+    // Terapkan tema berdasarkan localStorage
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    themeButton.classList[selectedIcon === 'ri-moon-clear-fill' ? 'add' : 'remove'](iconTheme);
+
+    const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+    const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-clear-fill' : 'ri-sun-fill';
+
+    themeButton.addEventListener('click', () => {
+        document.body.classList.toggle(darkTheme);
+        themeButton.classList.toggle(iconTheme);
+        localStorage.setItem('selected-theme', getCurrentTheme());
+        localStorage.setItem('selected-icon', getCurrentIcon());
+    });
+
+    /*=============== PRODUCT PURCHASE NOTIFICATION ===============*/
+    const purchaseButtons = document.querySelectorAll('.product__button');
+
+    purchaseButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productName = button.getAttribute('data-name');
+            const productPrice = button.getAttribute('data-price');
+
+            showPaymentNotification(productName, productPrice);
+        });
+    });
+
+    function showPaymentNotification(productName, productPrice) {
+        const notification = document.createElement('div');
+        notification.classList.add('payment-notification');
+        notification.innerHTML = `
+            <p>Berhasil Membeli <strong>${productName}</strong> Seharga Rp${productPrice.replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.</p>
+            <button class="notification-close" onclick="closeNotification()">X</button>
+        `;
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+            notification.classList.add('show');
+        }, 100);
+
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => {
+                notification.remove();
+            }, 300);
+        }, 5000);
+    }
+
+    window.closeNotification = function () {
+        const notification = document.querySelector('.payment-notification');
+        if (notification) {
+            notification.classList.remove('show');
+            setTimeout(() => {
+                notification.remove();
+            }, 300);
+        }
+    };
+});
+
+    </script>
+</body>
+</html>
